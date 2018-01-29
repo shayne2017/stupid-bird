@@ -1,0 +1,11 @@
+{"file":"resourceMerge0_png.png","frames":{
+"基础资源/bg_day.png":{"x":1,"y":1,"w":288,"h":512,"offX":0,"offY":0,"sourceW":288,"sourceH":512},
+"基础资源/land.png":{"x":1,"y":514,"w":336,"h":112,"offX":0,"offY":0,"sourceW":336,"sourceH":112},
+"pipe_up.png":{"x":290,"y":1,"w":52,"h":320,"offX":0,"offY":0,"sourceW":52,"sourceH":320},
+"pipe_down.png":{"x":1,"y":627,"w":52,"h":320,"offX":0,"offY":0,"sourceW":52,"sourceH":320},
+"text_game_over.png":{"x":290,"y":322,"w":204,"h":54,"offX":0,"offY":0,"sourceW":204,"sourceH":54},
+"场景1资源/title.png":{"x":290,"y":377,"w":178,"h":48,"offX":0,"offY":0,"sourceW":178,"sourceH":48},
+"场景1资源/button_play.png":{"x":290,"y":426,"w":116,"h":70,"offX":0,"offY":0,"sourceW":116,"sourceH":70},
+"基础资源/bird0_2_57.png":{"x":343,"y":1,"w":144,"h":48,"offX":0,"offY":0,"sourceW":144,"sourceH":48},
+"hdmnr4rwklu8/bird0_0.png":{"x":343,"y":50,"w":48,"h":48,"offX":0,"offY":0,"sourceW":48,"sourceH":48},
+"new.png":{"x":290,"y":497,"w":32,"h":14,"offX":0,"offY":0,"sourceW":32,"sourceH":14}}}

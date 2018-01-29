@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<eventSheets layout="MainScene" previous="" next="" version="2.2">
+  <item type="instance" UID="191"/>
+  <item type="instance" UID="200"/>
+  <item type="instance" UID="203">
+    <item type="behavior" behaviorType="SinBehavior" name="曲线">
+      <item valueDataType="number" value="1" name="active"/>
+      <item valueDataType="number" value="1" name="movement"/>
+      <item valueDataType="number" value="0" name="wave"/>
+      <item valueDataType="number" value="1" name="period"/>
+      <item valueDataType="number" value="0" name="periodRandom"/>
+      <item valueDataType="number" value="0" name="periodOffset"/>
+      <item valueDataType="number" value="0" name="periodOffsetRandom"/>
+      <item valueDataType="number" value="10" name="magnitude"/>
+      <item valueDataType="number" value="0" name="magnitudeRandom"/>
+    </item>
+  </item>
+  <item type="instance" UID="188"/>
+  <item type="instance" UID="185"/>
+  <item type="variable" variableName="isDown" variableType="boolean" initValue="false"/>
+  <item type="variable" variableName="timer" variableType="number" initValue="0.005"/>
+  <item type="variable" variableName="totalNum" variableType="number" initValue="0"/>
+  <item type="event" conditionRelationShip="true" triggerOnceWhileTrue="false">
+    <item type="condition" callTarget="instance" paramsClass="OnSceneInitCompleteEvent" callName="onSceneInitComplete" isTrigger="true" target="System"/>
+    <item type="action" persistent="true" callTarget="instance" callName="execTween" target="AISprite199">
+      <item valueDataType="string" value="%22tween1%22" name="key"/>
+      <item valueDataType="number" value="198" name="x"/>
+      <item valueDataType="number" value="120" name="y"/>
+      <item valueDataType="number" value="" name="anchorX"/>
+      <item valueDataType="number" value="" name="anchorY"/>
+      <item valueDataType="number" value="" name="width"/>
+      <item valueDataType="number" value="" name="height"/>
+      <item valueDataType="number" value="" name="rotation"/>
+      <item valueDataType="number" value="" name="alpha"/>
+      <item valueDataType="number" value="1000" name="duration"/>
+      <item valueDataType="string" value="%22bounceOut%22" name="ease"/>
+      <item valueDataType="number" value="0" name="waitTime"/>
+      <item valueDataType="number" value="0" name="loop"/>
+      <item valueDataType="number" value="1" name="scaleX"/>
+      <item valueDataType="number" value="1" name="scaleY"/>
+    </item>
+  </item>
+  <item type="event" conditionRelationShip="true" triggerOnceWhileTrue="false">
+    <item type="condition" callTarget="instance" paramsClass="OnButtonBeginEvent" callName="onButtonBegin" isTrigger="true" target="AISprite190"/>
+    <item type="action" persistent="false" callTarget="instance" callName="gotoScene" target="System">
+      <item valueDataType="string" value="%22playScene%22" name="18"/>
+    </item>
+  </item>
+</eventSheets>

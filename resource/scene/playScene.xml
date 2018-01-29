@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout id="null" sceneSize="414,736" next="overScene" previous="MainScene" eventSheet="playSceneEventSheet" version="2.2">
+  <layer index="0" parallaxX="100" parallaxY="100" layerAlpha="1" layerVisible="true" cacheAsBitmap="false" bgColor="" bgColorAlpha="" layerScaleX="100" layerScaleY="100"/>
+  <layer index="1" parallaxX="100" parallaxY="100" layerAlpha="1" layerVisible="true" cacheAsBitmap="false" bgColor="" bgColorAlpha="" layerScaleX="100" layerScaleY="100"/>
+  <layer index="2" parallaxX="100" parallaxY="100" layerAlpha="1" layerVisible="true" cacheAsBitmap="false" bgColor="" bgColorAlpha="" layerScaleX="100" layerScaleY="100"/>
+  <item UID="197" plugin="AISprite" name="AISprite184" cacheAsBitmap="false" parallaxX="100" parallaxY="100" index="0" family="displayobject">
+    <item name="name" value="AISprite184" valueDataType="string"/>
+    <item name="uiGuid" value="197" valueDataType="string"/>
+    <item name="global" value="false" valueDataType="boolean"/>
+    <item name="visible" value="true" valueDataType="boolean"/>
+    <item name="x" value="0" valueDataType="number"/>
+    <item name="y" value="-1.034316460758646" valueDataType="number"/>
+    <item name="anchorX" value="0" valueDataType="number"/>
+    <item name="anchorY" value="0" valueDataType="number"/>
+    <item name="width" value="414" valueDataType="number"/>
+    <item name="height" value="736" valueDataType="number"/>
+    <item name="angle" value="0" valueDataType="number"/>
+    <item name="alpha" value="1" valueDataType="number"/>
+    <item name="url" value="resource%2FuserAsset%2F%E5%9F%BA%E7%A1%80%E8%B5%84%E6%BA%90%2Fbg_day.png" valueDataType="string"/>
+    <item name="enabled" value="false" valueDataType="boolean"/>
+    <item name="collision" value="false" valueDataType="boolean"/>
+    <item name="collisionData" value="0%2Fn0.00%7C736.00%2C414.00%7C736.00%2C414.00%7C0.00%2C0.00%7C0.00" sourceValue="0%2Fn0.00%7C736.00%2C414.00%7C736.00%2C414.00%7C0.00%2C0.00%7C0.00" valueDataType="string"/>
+    <item name="layer" value="0" valueDataType="number"/>
+  </item>
+  <item UID="2921" plugin="AISprite" name="AISprite2920" cacheAsBitmap="false" parallaxX="100" parallaxY="100" index="0" family="displayobject">
+    <item name="name" value="AISprite2920" valueDataType="string"/>
+    <item name="uiGuid" value="2921" valueDataType="string"/>
+    <item name="global" value="false" valueDataType="boolean"/>
+    <item name="visible" value="true" valueDataType="boolean"/>
+    <item name="x" value="-233.9692832620171" valueDataType="number"/>
+    <item name="y" value="398.5836895561824" valueDataType="number"/>
+    <item name="anchorX" value="0.5" valueDataType="number"/>
+    <item name="anchorY" value="0.5" valueDataType="number"/>
+    <item name="width" value="35.85524938736489" valueDataType="number"/>
+    <item name="height" value="420" valueDataType="number"/>
+    <item name="angle" value="0" valueDataType="number"/>
+    <item name="alpha" value="1" valueDataType="number"/>
+    <item name="url" value="resource%2FuserAsset%2Fpipe_up.png" valueDataType="string"/>
+    <item name="enabled" value="false" valueDataType="boolean"/>
+    <item name="collision" value="true" valueDataType="boolean"/>
+    <item name="collisionData" value="0%2Fn0.00%7C0.00%2C-2.00%7C5.00%2C-2.00%7C28.50%2C-1.00%7C48.50_-1.00%7C48.50%2C-1.50%7C79.50%2C0.50%7C97.50_35.86%7C0.00%2C0.00%7C0.00%2C-1.00%7C48.50%2C0.50%7C97.50%2C2.50%7C124.45_35.86%7C420.00%2C35.86%7C0.00%2C2.50%7C124.45%2C2.50%7C143.50%2C2.50%7C170.35_2.50%7C170.35%2C1.50%7C187.00%2C1.50%7C203.00%2C2.00%7C226.00%2C35.86%7C420.00_35.86%7C420.00%2C2.00%7C226.00%2C0.00%7C243.50%2C-0.50%7C275.45%2C3.00%7C297.50_35.86%7C420.00%2C3.00%7C297.50%2C3.00%7C320.00_3.00%7C320.00%2C0.00%7C420.00%2C35.86%7C420.00" sourceValue="0%2Fn0.00%7C420.00%2C35.86%7C420.00%2C35.86%7C0.00%2C0.00%7C0.00%2C-2.00%7C5.00%2C-2.00%7C28.50%2C-1.00%7C48.50%2C-1.50%7C79.50%2C0.50%7C97.50%2C2.50%7C124.45%2C2.50%7C143.50%2C2.50%7C170.35%2C1.50%7C187.00%2C1.50%7C203.00%2C2.00%7C226.00%2C0.00%7C243.50%2C-0.50%7C275.45%2C3.00%7C297.50%2C3.00%7C320.00" valueDataType="string"/>
+    <item name="layer" value="1" valueDataType="number"/>
+    <item name="behaviors">
+      <item type="behavior" behaviorType="DestoryOutsideLayoutBehaivor" name="出界销毁">
+        <item valueDataType="number" value="2" name="type"/>
+      </item>
+      <item type="behavior" behaviorType="BulletBehaivor" name="子弹">
+        <item valueDataType="number" value="180" name="speed"/>
+        <item valueDataType="number" value="0" name="acceleration"/>
+        <item valueDataType="number" value="0" name="gravity"/>
+        <item valueDataType="number" value="-180" name="angle"/>
+        <item valueDataType="number" value="0" name="bounceOffSolids"/>
+        <item valueDataType="number" value="1" name="solidChangedAngle"/>
+      </item>
+    </item>
+  </item>
+  <item UID="196" plugin="AISprite" name="AISprite187" cacheAsBitmap="false" parallaxX="100" parallaxY="100" index="0" family="displayobject">
+    <item name="name" value="AISprite187" valueDataType="string"/>
+    <item name="uiGuid" value="196" valueDataType="string"/>
+    <item name="global" value="false" valueDataType="boolean"/>
+    <item name="visible" value="true" valueDataType="boolean"/>
+    <item name="x" value="0" valueDataType="number"/>
+    <item name="y" value="624" valueDataType="number"/>
+    <item name="anchorX" value="0" valueDataType="number"/>
+    <item name="anchorY" value="0" valueDataType="number"/>
+    <item name="width" value="414" valueDataType="number"/>
+    <item name="height" value="112" valueDataType="number"/>
+    <item name="angle" value="0" valueDataType="number"/>
+    <item name="alpha" value="1" valueDataType="number"/>
+    <item name="url" value="resource%2FuserAsset%2F%E5%9F%BA%E7%A1%80%E8%B5%84%E6%BA%90%2Fland.png" valueDataType="string"/>
+    <item name="enabled" value="false" valueDataType="boolean"/>
+    <item name="collision" value="true" valueDataType="boolean"/>
+    <item name="collisionData" value="0%2Fn0.00%7C112.00%2C414.00%7C112.00%2C414.00%7C0.00%2C0.00%7C0.00" sourceValue="0%2Fn0.00%7C112.00%2C414.00%7C112.00%2C414.00%7C0.00%2C0.00%7C0.00" valueDataType="string"/>
+    <item name="layer" value="2" valueDataType="number"/>
+  </item>
+  <item UID="2926" plugin="AISprite" name="AISprite2925" cacheAsBitmap="false" parallaxX="100" parallaxY="100" index="1" family="displayobject">
+    <item name="name" value="AISprite2925" valueDataType="string"/>
+    <item name="uiGuid" value="2926" valueDataType="string"/>
+    <item name="global" value="false" valueDataType="boolean"/>
+    <item name="visible" value="true" valueDataType="boolean"/>
+    <item name="x" value="-114.62200766767133" valueDataType="number"/>
+    <item name="y" value="401.5469280657088" valueDataType="number"/>
+    <item name="anchorX" value="0.5214737758090937" valueDataType="number"/>
+    <item name="anchorY" value="0.498807012455051" valueDataType="number"/>
+    <item name="width" value="35" valueDataType="number"/>
+    <item name="height" value="420" valueDataType="number"/>
+    <item name="angle" value="0" valueDataType="number"/>
+    <item name="alpha" value="1" valueDataType="number"/>
+    <item name="url" value="resource%2FuserAsset%2Fpipe_down.png" valueDataType="string"/>
+    <item name="enabled" value="false" valueDataType="boolean"/>
+    <item name="collision" value="true" valueDataType="boolean"/>
+    <item name="collisionData" value="0%2Fn0.00%7C0.00%2C35.00%7C0.00%2C35.00%7C420.00%2C0.00%7C420.00%2C0.50%7C398.10_0.00%7C0.00%2C0.50%7C398.10%2C2.00%7C388.50%2C2.00%7C372.00%2C2.00%7C354.00%2C1.00%7C336.50%2C0.43%7C338.42_0.00%7C0.00%2C0.43%7C338.42%2C1.00%7C336.50%2C1.50%7C314.00%2C1.50%7C281.50_1.50%7C281.50%2C2.50%7C239.50%2C2.50%7C201.50%2C2.00%7C155.50%2C0.00%7C0.00_2.00%7C155.50%2C3.00%7C120.50%2C3.00%7C94.50%2C1.50%7C63.00_1.50%7C63.00%2C1.00%7C38.55%2C0.50%7C15.55%2C0.00%7C0.00%2C2.00%7C155.50" sourceValue="0%2Fn0.50%7C398.10%2C2.00%7C388.50%2C2.00%7C372.00%2C2.00%7C354.00%2C1.00%7C336.50%2C1.50%7C314.00%2C1.50%7C281.50%2C2.50%7C239.50%2C2.50%7C201.50%2C2.00%7C155.50%2C3.00%7C120.50%2C3.00%7C94.50%2C1.50%7C63.00%2C1.00%7C38.55%2C0.50%7C15.55%2C0.00%7C0.00%2C35.00%7C0.00%2C35.00%7C420.00%2C0.00%7C420.00" valueDataType="string"/>
+    <item name="layer" value="2" valueDataType="number"/>
+    <item name="behaviors">
+      <item type="behavior" behaviorType="DestoryOutsideLayoutBehaivor" name="出界销毁">
+        <item valueDataType="number" value="2" name="type"/>
+      </item>
+      <item type="behavior" behaviorType="BulletBehaivor" name="子弹">
+        <item valueDataType="number" value="180" name="speed"/>
+        <item valueDataType="number" value="0" name="acceleration"/>
+        <item valueDataType="number" value="0" name="gravity"/>
+        <item valueDataType="number" value="-180" name="angle"/>
+        <item valueDataType="number" value="0" name="bounceOffSolids"/>
+        <item valueDataType="number" value="1" name="solidChangedAngle"/>
+      </item>
+    </item>
+  </item>
+  <item UID="2938" plugin="AISprite" name="myBird" cacheAsBitmap="false" parallaxX="100" parallaxY="100" index="2" family="displayobject">
+    <item name="name" value="myBird" valueDataType="string"/>
+    <item name="uiGuid" value="2938" valueDataType="string"/>
+    <item name="global" value="false" valueDataType="boolean"/>
+    <item name="visible" value="true" valueDataType="boolean"/>
+    <item name="x" value="203.2223887816541" valueDataType="number"/>
+    <item name="y" value="326.04533747681825" valueDataType="number"/>
+    <item name="anchorX" value="0.5" valueDataType="number"/>
+    <item name="anchorY" value="0.5" valueDataType="number"/>
+    <item name="width" value="48.24477756330822" valueDataType="number"/>
+    <item name="height" value="44.10932504636361" valueDataType="number"/>
+    <item name="angle" value="0" valueDataType="number"/>
+    <item name="alpha" value="1" valueDataType="number"/>
+    <item name="url" value="resource%2FuserAsset%2Fhdmnr4rwklu8%2Fbird0_0.png" valueDataType="string"/>
+    <item name="enabled" value="false" valueDataType="boolean"/>
+    <item name="collision" value="true" valueDataType="boolean"/>
+    <item name="collisionData" value="0%2Fn4.80%7C28.70%2C11.00%7C33.70%2C38.85%7C32.80%2C38.70%7C21.50%2C35.25%7C13.30%2C26.80%7C10.70%2C8.15%7C12.30" sourceValue="0%2Fn4.80%7C28.70%2C11.00%7C33.70%2C38.85%7C32.80%2C38.70%7C21.50%2C35.25%7C13.30%2C26.80%7C10.70%2C8.15%7C12.30" valueDataType="string"/>
+    <item name="layer" value="2" valueDataType="number"/>
+  </item>
+</layout>

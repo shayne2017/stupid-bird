@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<eventSheets layout="playScene" previous="" next="" version="2.2">
+  <item type="instance" UID="2938"/>
+  <item type="instance" UID="2926">
+    <item type="behavior" behaviorType="DestoryOutsideLayoutBehaivor" name="出界销毁">
+      <item valueDataType="number" value="2" name="type"/>
+    </item>
+    <item type="behavior" behaviorType="BulletBehaivor" name="子弹">
+      <item valueDataType="number" value="180" name="speed"/>
+      <item valueDataType="number" value="0" name="acceleration"/>
+      <item valueDataType="number" value="0" name="gravity"/>
+      <item valueDataType="number" value="-180" name="angle"/>
+      <item valueDataType="number" value="0" name="bounceOffSolids"/>
+      <item valueDataType="number" value="1" name="solidChangedAngle"/>
+    </item>
+  </item>
+  <item type="instance" UID="196"/>
+  <item type="instance" UID="2921">
+    <item type="behavior" behaviorType="DestoryOutsideLayoutBehaivor" name="出界销毁">
+      <item valueDataType="number" value="2" name="type"/>
+    </item>
+    <item type="behavior" behaviorType="BulletBehaivor" name="子弹">
+      <item valueDataType="number" value="180" name="speed"/>
+      <item valueDataType="number" value="0" name="acceleration"/>
+      <item valueDataType="number" value="0" name="gravity"/>
+      <item valueDataType="number" value="-180" name="angle"/>
+      <item valueDataType="number" value="0" name="bounceOffSolids"/>
+      <item valueDataType="number" value="1" name="solidChangedAngle"/>
+    </item>
+  </item>
+  <item type="instance" UID="197"/>
+  <item type="variable" variableName="isDown" variableType="boolean" initValue="false"/>
+  <item type="variable" variableName="timer" variableType="number" initValue="0.005"/>
+  <item type="variable" variableName="totalNum" variableType="number" initValue="0"/>
+  <item type="event" conditionRelationShip="true" triggerOnceWhileTrue="false">
+    <item type="condition" callTarget="instance" paramsClass="EveryXSecondsEvent" callName="everyXSecondEvent" isTrigger="false" target="System">
+      <item valueDataType="number" value="ls.random()*15%2B0.8" name="interval"/>
+    </item>
+    <item type="action" persistent="false" callTarget="instance" callName="createObject" target="System">
+      <item valueDataType="string" value="AISprite2920" name="23" isFamily="false"/>
+      <item valueDataType="number" value="0" name="22"/>
+      <item valueDataType="number" value="414" name="21"/>
+      <item valueDataType="number" value="ls.random()*200%2B620" name="20"/>
+    </item>
+    <item type="action" persistent="false" callTarget="instance" callName="createObject" target="System">
+      <item valueDataType="string" value="AISprite2925" name="23" isFamily="false"/>
+      <item valueDataType="number" value="0" name="22"/>
+      <item valueDataType="number" value="414" name="21"/>
+      <item valueDataType="number" value="-(600-AISprite2920.y)" name="20"/>
+    </item>
+  </item>
+  <item type="event" conditionRelationShip="true" triggerOnceWhileTrue="false">
+    <item type="condition" callTarget="instance" paramsClass="OnCollisionWithOtherObjectEvent" callName="onCollisionWithOtherObject" isTrigger="true" target="myBird">
+      <item valueDataType="string" value="AISprite187" name="object" isFamily="false"/>
+    </item>
+    <item type="action" persistent="false" callTarget="instance" callName="gotoScene" target="System">
+      <item valueDataType="string" value="%22overScene%22" name="18"/>
+    </item>
+  </item>
+  <item type="event" conditionRelationShip="true" triggerOnceWhileTrue="false">
+    <item type="condition" callTarget="instance" paramsClass="OnCollisionWithOtherObjectEvent" callName="onCollisionWithOtherObject" isTrigger="true" target="myBird">
+      <item valueDataType="string" value="AISprite2920" name="object" isFamily="false"/>
+    </item>
+    <item type="action" persistent="false" callTarget="instance" callName="gotoScene" target="System">
+      <item valueDataType="string" value="%22overScene%22" name="18"/>
+    </item>
+  </item>
+  <item type="event" conditionRelationShip="true" triggerOnceWhileTrue="false">
+    <item type="condition" callTarget="instance" paramsClass="OnCollisionWithOtherObjectEvent" callName="onCollisionWithOtherObject" isTrigger="true" target="myBird">
+      <item valueDataType="string" value="AISprite2925" name="object" isFamily="false"/>
+    </item>
+    <item type="action" persistent="false" callTarget="instance" callName="gotoScene" target="System">
+      <item valueDataType="string" value="%22overScene%22" name="18"/>
+    </item>
+  </item>
+  <item type="event" conditionRelationShip="true" triggerOnceWhileTrue="false">
+    <item type="condition" callTarget="instance" paramsClass="EveryXSecondsEvent" callName="everyXSecondEvent" isTrigger="false" target="System">
+      <item valueDataType="number" value="0.01" name="interval"/>
+    </item>
+    <item type="action" persistent="false" callTarget="instance" callName="setY" target="myBird">
+      <item valueDataType="number" value="myBird.y%2B%3D6" name="16"/>
+    </item>
+    <item type="action" persistent="false" callTarget="instance" callName="rotateTowardAngle" target="myBird">
+      <item valueDataType="number" value="90" name="1"/>
+      <item valueDataType="number" value="2" name="2"/>
+    </item>
+  </item>
+  <item type="event" conditionRelationShip="true" triggerOnceWhileTrue="false">
+    <item type="condition" callTarget="instance" paramsClass="OnTouchTapEvent" callName="onTouchTap" isTrigger="true" target="Touch"/>
+    <item type="action" persistent="true" callTarget="instance" callName="execTween" target="myBird">
+      <item valueDataType="string" value="%22tween%22" name="key"/>
+      <item valueDataType="number" value="null" name="x"/>
+      <item valueDataType="number" value="myBird.y-55" name="y"/>
+      <item valueDataType="number" value="null" name="anchorX"/>
+      <item valueDataType="number" value="null" name="anchorY"/>
+      <item valueDataType="number" value="null" name="width"/>
+      <item valueDataType="number" value="null" name="height"/>
+      <item valueDataType="number" value="null" name="rotation"/>
+      <item valueDataType="number" value="null" name="alpha"/>
+      <item valueDataType="number" value="140" name="duration"/>
+      <item valueDataType="string" value="%22backOut%22" name="ease"/>
+      <item valueDataType="number" value="0" name="waitTime"/>
+      <item valueDataType="number" value="0" name="loop"/>
+      <item valueDataType="number" value="1" name="scaleX"/>
+      <item valueDataType="number" value="1" name="scaleY"/>
+    </item>
+    <item type="action" persistent="false" callTarget="instance" callName="rotateTowardAngle" target="myBird">
+      <item valueDataType="number" value="-45" name="1"/>
+      <item valueDataType="number" value="90" name="2"/>
+    </item>
+  </item>
+  <item type="event" conditionRelationShip="true" triggerOnceWhileTrue="false">
+    <item type="condition" callTarget="instance" paramsClass="CompareXPosEvent" callName="compareX" isTrigger="false" target="AISprite2920">
+      <item valueDataType="string" value="%22equalTo%22" name="operationType"/>
+      <item valueDataType="number" value="207" name="x"/>
+    </item>
+    <item type="action" persistent="false" callTarget="instance" callName="addTo" target="System">
+      <item valueDataType="string" value="totalNum" name="14" variable="true"/>
+      <item valueDataType="number" value="1" name="13"/>
+    </item>
+  </item>
+  <item type="event" conditionRelationShip="true" triggerOnceWhileTrue="false">
+    <item type="condition" callTarget="instance" paramsClass="OnSceneInitCompleteEvent" callName="onSceneInitComplete" isTrigger="true" target="System"/>
+    <item type="action" persistent="false" callTarget="instance" callName="setValue" target="System">
+      <item valueDataType="string" value="totalNum" name="10" variable="true"/>
+      <item valueDataType="any" value="0" name="9"/>
+    </item>
+  </item>
+</eventSheets>

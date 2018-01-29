@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<eventSheets layout="overScene" previous="" next="" version="2.2">
+  <item type="instance" UID="2944"/>
+  <item type="instance" UID="2941"/>
+  <item type="instance" UID="2918"/>
+  <item type="instance" UID="2915"/>
+  <item type="instance" UID="2911"/>
+  <item type="instance" UID="2912"/>
+  <item type="variable" variableName="isDown" variableType="boolean" initValue="false"/>
+  <item type="variable" variableName="timer" variableType="number" initValue="0.005"/>
+  <item type="variable" variableName="totalNum" variableType="number" initValue="0"/>
+  <item type="event" conditionRelationShip="true" triggerOnceWhileTrue="false">
+    <item type="condition" callTarget="instance" paramsClass="OnButtonBeginEvent" callName="onButtonBegin" isTrigger="true" target="重新开始"/>
+    <item type="action" persistent="false" callTarget="instance" callName="gotoScene" target="System">
+      <item valueDataType="string" value="%22playScene%22" name="18"/>
+    </item>
+  </item>
+  <item type="event" conditionRelationShip="true" triggerOnceWhileTrue="false">
+    <item type="condition" callTarget="instance" paramsClass="OnCreatedEvent" callName="onCreated" isTrigger="true" target="AITextField2940"/>
+    <item type="action" persistent="false" callTarget="instance" callName="setText" target="AITextField2940">
+      <item valueDataType="string" value="System.totalNum" name="1"/>
+    </item>
+  </item>
+</eventSheets>
