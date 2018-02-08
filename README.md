@@ -1,2 +1,2 @@
 # stupid-bird
-a game by Egret
+一款基于Egret的flappybird游戏
